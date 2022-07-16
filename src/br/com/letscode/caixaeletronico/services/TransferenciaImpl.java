@@ -26,11 +26,10 @@ public class TransferenciaImpl implements Transferencia{
         conta.retirarSaldo(valor);
 
         System.out.println("Valor transferido: " + valor);
-        System.out.println("Número da conta destino: " + numeroContaDestino);
+        System.out.println("Número da conta: " + numeroContaDestino);
         System.out.printf("Transferência realizada com sucesso! O saldo atualizado é de R$ %.2f%n", conta.getSaldo());
         return valor;
-
-
+        
     }
 
     @Override

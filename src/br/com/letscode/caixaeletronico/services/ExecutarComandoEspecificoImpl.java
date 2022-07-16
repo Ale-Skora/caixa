@@ -49,10 +49,12 @@ public class ExecutarComandoEspecificoImpl implements ExecutarComandoEspecifico 
             abrirConta.execute();
 
         }else if (comando == 4){
-            System.out.println("Digite o número da conta: ");
+            System.out.println("Digite o número da conta origem: ");
             int numeroDaConta = entrada.nextInt();
             System.out.println("Digite o valor a ser transferido: ");
             double valor = entrada.nextInt();
+            System.out.println("Digite a conta de destino: ");
+            int conta = entrada.nextInt();
             Conta contaOrigem = new Conta();
             transferencia.execute(valor, numeroDaConta, contaOrigem);
 
