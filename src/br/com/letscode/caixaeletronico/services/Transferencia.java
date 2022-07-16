@@ -15,4 +15,10 @@ public interface Transferencia {
      * @param origem             Conta de onde vai partir a transação.
      */
     void transferir(double valor, Conta numeroContaDestino, Conta origem);
+
+    void execute(double valor, Conta numeroContaDestino, Conta origem);
+
+    double execute(double valor, int numeroContaDestino, Conta origem);
+
+    void execute(double valor, int numeroDaConta);
 }

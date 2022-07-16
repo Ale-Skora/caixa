@@ -33,4 +33,7 @@ public class Conta {
             System.out.println("Saldo insuficiente");
         }
     }
+
+    public void retirarSaldo() {
+    }
 }

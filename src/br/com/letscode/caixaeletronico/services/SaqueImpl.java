@@ -8,6 +8,7 @@ public class SaqueImpl implements Saque {
     private final MemoriaContaRepository repository;
 
     public SaqueImpl(MemoriaContaRepository repository) {
+
         this.repository = repository;
     }
 
@@ -26,7 +27,7 @@ public class SaqueImpl implements Saque {
 
         System.out.println("Valor sacado: " + valor);
         System.out.println("Número da conta: " + numeroDaConta);
-        System.out.printf("Saque efetuado com sucesso! O saldo atualizado é de R$%.2f %n", conta.getSaldo());
+        System.out.printf("Saque efetuado com sucesso! O saldo atualizado é de R$ %.2f %n", conta.getSaldo());
 
     }
 }
